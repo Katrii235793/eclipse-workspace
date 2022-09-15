@@ -1,0 +1,21 @@
+package ustdemo;
+
+public class stardes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n, j;
+		for (int i = 5; i > 0; i--)// no; of rows
+		{
+			for (j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+
+			{
+				System.out.println(" ");
+			}
+
+		}
+	}
+
+}

@@ -1,0 +1,74 @@
+package sorting;
+
+import java.util.Scanner;
+
+public class merge {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scan=new Scanner(System.in);
+
+System.out.println("Enter the number of array elements");
+int n=scan.nextInt();
+int[] a=new int[n];
+System.out.println("Enter the array elements");
+for(int i=0;i<n;i++)
+a[i]=scan.nextInt();
+	}
+	/*void mergeSort(a,0,a.length-1);
+	for(int x:a) {
+	System.out.println(x);
+	}*/
+}
+void mergeSort(int[] a,int i,int j) {
+	if(i<j) {
+		int middle=(i+j)/2;
+		mergeSort(a,i,middle);
+		mergeSort(a,middle+1,j);
+		merge(a,i,middle,j);
+		
+	}
+}
+private void merge(int[] a, int low, int middle, int high) {
+	// TODO Auto-generated method stub
+	int i=low;
+	int j=middle+1;
+	int k=low;
+	int[] b=new int[a.length];
+	while(i<=middle && j<=high)
+	{
+		if(a[i]<a[j]) {
+			b[k]=a[i];
+			i++;
+			k++;
+		}else {
+			b[k]=a[j];
+			j++;
+			k++;
+	}
+			
+	}
+	while(i<=middle) {
+		b[k]=a[i];
+		i++;
+		k++;
+	}
+	while(j<=high) {
+		b[k]=a[j];
+		j++;
+		k++;
+		
+	}
+	for(i=low;i<=high;i++) {
+		a[i]=b[i];
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+

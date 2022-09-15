@@ -1,0 +1,23 @@
+package ustdemo;
+import java.io.*;
+import java.lang.*;
+
+public class greatest {
+
+	public static void main(String[] args) throws IO Exception {
+		// TODO Auto-generated method stub
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("ENTER TWO INTEGERS ");
+		int a=Integer.parseInt(br.readLine());
+		int b=Integer.parseInt(br.readLine());
+		if(a>b) {
+			System.out.println(a);
+		}
+		else
+		{
+			System.out.println(b);
+		}
+			
+	}
+
+}

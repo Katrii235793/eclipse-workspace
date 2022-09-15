@@ -1,0 +1,30 @@
+package ustdemo;
+
+import java.util.Scanner;
+
+public class table {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		int i;
+		System.out.println("Enter a number");
+		int a=scan.nextInt();
+		if(a==24)
+		{
+			for(i=24;i<240;i=i+24)
+				System.out.print((i)+" ");
+		}
+		else if(i==50)
+		{
+			for(i=50;i<500;i=i+50)
+				System.out.print((i)+" ");
+		}
+		else
+		{
+			for(i=29;i<290;i=i+29)
+				System.out.print((i)+" ");
+		}
+		}
+		}
+}

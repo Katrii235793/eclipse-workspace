@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\ustjavafsdb118\eclipse-workspace\ustdemo\.metadata\.plugins\org.eclipse.jdt.core
