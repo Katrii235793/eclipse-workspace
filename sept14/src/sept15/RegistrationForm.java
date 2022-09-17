@@ -25,9 +25,7 @@ add(tf2);
 setSize(300,300);  
 setLayout(null);  
 setVisible(true); 
-tf.setText("Name"); 
-tf1.setText("UID");
-tf2.setText("Address");
+
 }  
 public void actionPerformed(ActionEvent e){  
 tf.setText("Name"); 
