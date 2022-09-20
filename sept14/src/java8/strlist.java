@@ -12,7 +12,7 @@ public class strlist {
 		list.add("Tony");
 		list.add("Crimson");
 		
-		double count=list.stream().filter(str->str.length()>4).count();
+	double count=list.stream().filter(str->str.length()>4).count();
 		System.out.println("Number of strings having length greater than 4 is "+count);
 	}
 }
