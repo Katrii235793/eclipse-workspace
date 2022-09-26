@@ -10,11 +10,7 @@ public class radixSort {
   public static void sort(int[] array, int radix) {
       if (array.length == 0) {
           return;
-      }
-
- 
-
-      
+      }      
       int minValue = array[0];
       int maxValue = array[0];
       for (int i = 1; i < array.length; i++) {
