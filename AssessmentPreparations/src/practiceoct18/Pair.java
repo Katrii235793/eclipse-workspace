@@ -1,5 +1,6 @@
 package practiceoct18;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Pair {
@@ -27,14 +28,16 @@ public class Pair {
 		
 		System.out.println("Enter the desired sum");
 		int k=scan.nextInt();
-			for(i=0;i<a.length;i++) {
-				for(int j=i+1;j<a.length;j++) {
-					if(a[i]+a[j]==k) {
-						count++;
-						System.out.println(a[i]+","+a[j]);
-					}
-				}
-			}		
+				count++;
+				Arrays.sort(a);
+		        for( i=0;i<a.length;i++)
+		        {
+		            for(int j=i+1;j<a.length-1;j++)
+		            {
+		                if(a[i]==a[j])
+		                    a[i]=a[j+1];
+		            }
+		        }
 		
 			System.out.println("The number of pairs "+count);
 				}
